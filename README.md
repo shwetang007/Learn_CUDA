@@ -1,6 +1,8 @@
 # CUDA Tutorial_To_Basics 
 
-Welcome to the Tutorial_To_Basics branch of the CUDA Accelerated Computing Repository! This branch is dedicated to providing beginner-friendly tutorials for CUDA .
+Welcome to the Tutorial_To_Basics branch of the CUDA Accelerated Computing Magic Of Parallel Computing.
+
+This branch is dedicated to providing beginner-friendly tutorials for CUDA .
 
 Here, you'll find curated content aimed at individuals who are new to GPU programming and CUDA development.
 
