@@ -1,4 +1,4 @@
-# CUDA Accelerated Computing Repository - Tutorial_To_Basics Branch
+# CUDA Tutorial_To_Basics 
 
 Welcome to the Tutorial_To_Basics branch of the CUDA Accelerated Computing Repository! This branch is dedicated to providing beginner-friendly tutorials for CUDA .
 
