@@ -34,7 +34,7 @@ To get the most out of the **Tutorial_To_Basics** branch, follow these steps:
 
 If you need help or have any feedback about the tutorials, don’t hesitate to reach out. Our team is here to support you and answer any questions you might have.
 
-## FEEL ABSOLUTELY FREE TO ACESS THE OVERVIEW.MD FILE AS IT'S GOOD ENOUGH TO GIVE YOU AN OVERVIEW ABOUT CUDA
+##  Feel entirely at liberty to peruse the `overview.md` file, as it offers a comprehensive insight into CUDA, providing a succinct overview of its capabilities and applications.
 
 ## Acknowledgments
 
