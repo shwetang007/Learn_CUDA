@@ -34,6 +34,8 @@ To get the most out of the **Tutorial_To_Basics** branch, follow these steps:
 
 If you need help or have any feedback about the tutorials, don’t hesitate to reach out. Our team is here to support you and answer any questions you might have.
 
+## FEEL ABSOLUTELY FREE TO ACESS THE OVERVIEW.MD FILE AS IT'S GOOD ENOUGH TO GIVE YOU AN OVERVIEW ABOUT CUDA
+
 ## Acknowledgments
 
 A big thank you to the creators of the [CUDA parallel programming course](https://www.youtube.com/playlist?list=PLBQlPZZ80yqRVrt99CsmYY77MLaenKVa8) playlist for their amazing contributions to beginner-friendly CUDA education.
