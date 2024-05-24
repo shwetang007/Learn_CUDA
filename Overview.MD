@@ -39,6 +39,8 @@ CUDA stands for Compute Unified Device Architecture. It was developed by NVIDIA 
 
 4. **Programming Model**: CUDA uses a C-like programming language with extensions for parallelism, allowing developers to write code that can be executed on both the CPU and GPU.
 
+
+
 **Non-Technical Aspects**:
 
 1. **Performance**: CUDA can significantly accelerate computations compared to traditional CPU-based approaches, making it valuable for various industries and applications.
@@ -213,7 +215,8 @@ Citations:
 
 NOW WE DISCOVER THE TERM HIGH PERFORMANCE COMPUTING?
 
-->High-Performance Computing
+WHAT IS HIGH PERFORMANCE COMPUTING?
+
 High-performance computing (HPC) is the art and science of using groups of cutting edge computer systems to perform complex simulations, computations, and data analysis out of reach for standard commercial compute systems available.
 
 
@@ -221,10 +224,3 @@ What is HPC?
 HPC computer systems are characterized by their high-speed processing power, high-performance networks, and large-memory capacity, generating the capability to perform massive amounts of parallel processing. A supercomputer is a type of HPC computer that is highly advanced and provides immense computational power and speed, making it a key component of high-performance computing systems.
 
 In recent years, HPC has evolved from a tool focused on simulation-based scientific investigation to a dual role running simulation and machine learning (ML). This increase in scope for HPC systems has gained momentum because the combination of physics-based simulation and ML has compressed the time to scientific insight for fields such as climate modeling, drug discovery, protein folding, and computational fluid dynamics (CFD).
-
-
-
-                 DAY--->2
-
-
-THGE PRIMARY FOCUS IS ON THE  APPLICATIONS AND ADVANCEMENTS OF THE NVIDIA CUDA AND HOW IT CAN BE MADE TO BE USED ON HETEROGENOUS DEVICES AS CUDA WAS MADE FOR THE NVIDIA ONLY .
