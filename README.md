@@ -1,4 +1,4 @@
- # CUDA Accelerated Computing Repository
+ # CUDA Accelerated Computing Magic Of Parallel Computing
 
 Welcome to our Learn_CUDA This repository is dedicated to providing you with comprehensive resources and examples for harnessing the power of CUDA for high-performance computing tasks. Whether you're a seasoned CUDA developer or just getting started, you'll find valuable insights, best practices, and innovative solutions here.
 
