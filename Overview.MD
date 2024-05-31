@@ -52,20 +52,6 @@ The CPU (Central Processing Unit) is the primary component of a computer system 
 - **Address Bus**: Transfers memory addresses between components.
 - **Control Bus**: Carries control signals to coordinate operations.
 
-### Graphical Representation
-
-Here is a graphical representation of the CPU components and their functions:
-
-```mermaid
-graph LR
-    A[ALU] -->|Performs arithmetic and logic operations|> B[Registers]
-    B -->|Stores data and instructions|> C[Control Unit]
-    C -->|Coordinates activities|> D[Data Bus]
-    D -->|Transfers data|> E[Address Bus]
-    E -->|Transfers memory addresses|> F[Control Bus]
-    F -->|Carries control signals|> G[CPU]
-```
-
 ### GPU Anatomy
 
 1. **Streaming Multiprocessors (SMs)**: The main processing units within the GPU, each containing multiple CUDA Cores.
@@ -77,41 +63,7 @@ graph LR
 7. **Global Memory**: Enables access to the device’s DRAM. This is the slowest element to access for a CUDA program.
 Here is a graphical representation of the components and architecture of GPUs:
 
-```mermaid
-graph TD
-A[GPU] --> B[CUDA Cores]
-B --> C[Streaming Multiprocessors (SMs)]
-C --> D[Registers]
-D --> E[Shared Memory]
-E --> F[Global Memory]
-F --> G[Texture Units]
 
-A[GPU] --> H[Memory Hierarchy]
-H --> I[Registers]
-I --> J[Shared Memory]
-J --> K[Global Memory]
-
-A[GPU] --> L[Parallel Processing]
-L --> M[Massive Parallelism]
-M --> N[Hundreds of Cores]
-N --> O[Thousands of Threads]
-
-A[GPU] --> P[Specialized Use Cases]
-P --> Q[Deep Learning]
-Q --> R[Big Data Analytics]
-R --> S[Genomic Sequencing]
-
-A[GPU] --> T[Advantages]
-T --> U[High Data Throughput]
-U --> V[Massive Parallelism]
-V --> W[Specialized Acceleration]
-
-A[GPU] --> X[Limitations]
-X --> Y[Sequential Processing]
-Y --> Z[Unstructured Tasks]
-```
-
-This diagram illustrates the key components and architecture of GPUs:
 
 1. **CUDA Cores**: The fundamental processing units within the GPU, responsible for executing instructions in parallel.
 
@@ -551,5 +503,54 @@ High-performance computing (HPC) is the art and science of using groups of cutti
 
 What is HPC?
 HPC computer systems are characterized by their high-speed processing power, high-performance networks, and large-memory capacity, generating the capability to perform massive amounts of parallel processing. A supercomputer is a type of HPC computer that is highly advanced and provides immense computational power and speed, making it a key component of high-performance computing systems.
+Sure, here's a simple diagram and explanation that illustrates the key differences between high-performance computing (HPC) and traditional computing:
+
+### High-Performance Computing (HPC) Diagram
+
+```
+               +---------------------+
+               |    High-Performance |
+               |      Computing      |
+               +---------------------+
+                      /     \
+                     /       \
+         +-----------+         +-----------+
+         |  Parallel |         |   Massive |
+         | Processing|         | Data Sets |
+         +-----------+         +-----------+
+              |                       |
+   +------------------+     +------------------+
+   | Multiple CPUs/GPUs|   | Distributed Systems|
+   +------------------+     +------------------+
+              |                       |
+    +------------------------+ +------------------------+
+    | Specialized Software & | | High-Speed Networking |
+    | Algorithms             | | Infrastructure         |
+    +------------------------+ +------------------------+
+                      |               |
+             +---------------------------+
+             | Optimized for Speed &     |
+             | Computationally Intensive |
+             | Tasks                     |
+             +---------------------------+
+```
+
+### Explanation
+
+**High-Performance Computing (HPC):**
+- **Parallel Processing:** Uses multiple CPUs/GPUs to perform computations simultaneously, significantly speeding up processing times for large and complex tasks.
+- **Massive Data Sets:** Capable of handling and processing vast amounts of data, making it suitable for tasks such as simulations, large-scale computations, and data analysis.
+- **Multiple CPUs/GPUs:** Utilizes the power of multiple processors to achieve high computation speed.
+- **Distributed Systems:** Often involves a network of computers working together to solve complex problems.
+- **Specialized Software & Algorithms:** Requires software designed to optimize performance across multiple processors and handle large data sets efficiently.
+- **High-Speed Networking Infrastructure:** Ensures fast data transfer and communication between distributed systems.
+- **Optimized for Speed & Computationally Intensive Tasks:** Designed to perform complex calculations quickly and efficiently, often used in scientific research, financial modeling, and engineering simulations.
+
+**Traditional Computing:**
+- **Single CPU:** Typically relies on a single processor to handle tasks, leading to slower processing times for complex computations.
+- **Limited Data Handling:** Not optimized for processing large data sets, making it less suitable for data-intensive tasks.
+- **General-Purpose Software:** Uses standard software applications not specifically designed for high-speed or parallel processing.
+- **Standard Networking:** Utilizes regular networking infrastructure, which may not support the high-speed data transfer required for HPC tasks.
+- **Designed for General Tasks:** Ideal for everyday computing tasks such as word processing, web browsing, and basic data analysis.
 
 In recent years, HPC has evolved from a tool focused on simulation-based scientific investigation to a dual role running simulation and machine learning (ML). This increase in scope for HPC systems has gained momentum because the combination of physics-based simulation and ML has compressed the time to scientific insight for fields such as climate modeling, drug discovery, protein folding, and computational fluid dynamics (CFD).
