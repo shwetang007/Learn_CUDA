@@ -80,6 +80,59 @@ Here is a graphical representation of the components and architecture of GPUs:
 7. **Advantages**: GPUs offer high data throughput, massive parallelism, and specialized acceleration for certain tasks.
 
 8. **Limitations**: GPUs are less adept at tasks that require sequential processing or are not well structured.
+   
+                              MOTHERBOARD
+ 
+A motherboard is the main circuit board of a computer that connects and supports all hardware components. It is a complex system with various components and connectors. Here is a graphical representation of a typical motherboard along with a diagram and explanations of where the CPU and GPU are located:
+
+### Motherboard Diagram
+```
+  +---------------------------------------+
+  |          CPU Socket (LGA 1200)        |
+  +---------------------------------------+
+  |          RAM Slots (4x DDR4)         |
+  +---------------------------------------+
+  |          Chipset (Z390)              |
+  +---------------------------------------+
+  |          PCIe Slots (3x x16)        |
+  |          (for Graphics Cards)        |
+  +---------------------------------------+
+  |          SATA Ports (6x)            |
+  |          (for Storage Devices)      |
+  +---------------------------------------+
+  |          USB Ports (4x)             |
+  |          (for Peripherals)          |
+  +---------------------------------------+
+  |          Audio Jacks (3.5mm)        |
+  |          (for Headphones and Speakers) |
+  +---------------------------------------+
+  |          Ethernet Port (RJ-45)      |
+  |          (for Network Connection)    |
+  +---------------------------------------+
+  |          Power Connectors (8-pin, 4-pin) |
+  |          (for Power Supply)          |
+  +---------------------------------------+
+  |          Fan Connectors (4x)        |
+  |          (for Cooling Fans)         |
+  +---------------------------------------+
+```
+
+### Explanation of Components
+- **CPU Socket (LGA 1200)**: This is where the CPU (Central Processing Unit) is installed. It is a socket that connects the CPU to the motherboard.
+- **RAM Slots (4x DDR4)**: These are where the RAM (Random Access Memory) modules are installed. The motherboard supports DDR4 RAM.
+- **Chipset (Z390)**: This is the main logic chip that manages data transfer between the CPU, memory, and peripherals.
+- **PCIe Slots (3x x16)**: These are where graphics cards (GPUs) are installed. The x16 slots are designed for high-bandwidth devices like graphics cards.
+- **SATA Ports (6x)**: These are where storage devices like hard drives and solid-state drives are connected.
+- **USB Ports (4x)**: These are where peripherals like keyboards, mice, and flash drives are connected.
+- **Audio Jacks (3.5mm)**: These are where headphones and speakers are connected.
+- **Ethernet Port (RJ-45)**: This is where a network cable is connected for internet access.
+- **Power Connectors (8-pin, 4-pin)**: These are where the power supply connects to the motherboard.
+- **Fan Connectors (4x)**: These are where cooling fans are connected to the motherboard.
+
+### CPU and GPU Locations
+- **CPU (Central Processing Unit)**: The CPU is installed in the CPU socket (LGA 1200).
+- **GPU (Graphics Processing Unit)**: The GPU is installed in one of the PCIe slots (x16).
+
 
 ### CUDA Execution Process
 
