@@ -128,10 +128,6 @@ Here's a step-by-step explanation of the CUDA execution process:
 
 NOW THAT YOU UNDERSTAND WHAT A CPU AND GPU ARE, HERE IS A DETAILED COMPARISON BETWEEN THE TWO TO ENHANCE YOUR FAMILIARITY WITH THEIR DIFFERENCES:
 
-Here is a simplified diagram comparing the CPU and GPU, along with a brief explanation of CUDA's performance:
-
-### CPU vs. GPU Diagram
-
 ```mermaid
 graph TD
 A[CPU] --> B[Single Task]
@@ -147,7 +143,60 @@ I --> J[Thousands of Cores]
 J --> K[Thousands of Threads]
 K --> L[Simultaneous Execution]
 L --> M[Fast Execution]
+
+A[CPU] --> N[Low Latency]
+N --> O[Serial Processing]
+O --> P[Single Core]
+P --> Q[Single Thread]
+Q --> R[Single Instruction]
+R --> S[Single Cycle]
+
+A[GPU] --> T[High Throughput]
+T --> U[Parallel Processing]
+U --> V[Thousands of Cores]
+V --> W[Thousands of Threads]
+W --> X[Simultaneous Execution]
+X --> Y[Fast Execution]
+
+A[CPU] --> Z[General Processor]
+Z --> AA[Arithmetic Logic Unit]
+AA --> BB[Control Unit]
+BB --> CC[Registers]
+CC --> DD[Cache]
+DD --> EE[Memory Unit]
+EE --> FF[CPU Clock]
+
+A[GPU] --> GG[Specialized Processor]
+GG --> HH[Graphics Rendering]
+HH --> II[Texture Mapping]
+II --> JJ[Hardware Overlay]
+JJ --> KK[Decoding MPEG]
+KK --> LL[Digital Output]
+LL --> MM[GPU Clock]
+
+A[CPU] --> NN[Low Latency]
+NN --> OO[Serial Processing]
+OO --> PP[Single Core]
+PP --> QQ[Single Thread]
+QQ --> RR[Single Instruction]
+RR --> SS[Single Cycle]
+
+A[GPU] --> TT[High Throughput]
+TT --> UU[Parallel Processing]
+UU --> VV[Thousands of Cores]
+VV --> WW[Thousands of Threads]
+WW --> XX[Simultaneous Execution]
+XX --> YY[Fast Execution]
 ```
+
+This diagram highlights the key differences between the CPU and GPU, including:
+
+- **CPU vs. GPU Architecture**: The CPU has a single core and is designed for sequential processing, while the GPU has thousands of cores and is designed for parallel processing.
+- **CPU vs. GPU Performance**: The CPU is optimized for low latency and serial processing, while the GPU is optimized for high throughput and parallel processing.
+- **CPU vs. GPU Functions**: The CPU is a general processor that performs arithmetic and logic operations, while the GPU is a specialized processor that focuses on graphics rendering and parallel processing.
+- **CPU vs. GPU Memory**: The CPU has a smaller cache and memory, while the GPU has a larger memory and cache to handle parallel processing.
+- **CPU vs. GPU Clock Speed**: The CPU has a lower clock speed, while the GPU has a higher clock speed to handle parallel processing.
+
 
 ### CPU vs. GPU Explanation
 
