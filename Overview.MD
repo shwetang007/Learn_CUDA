@@ -29,6 +29,43 @@ IN-ORDER TO LEARN GOOD COMPUTING AND THE CUDA WE NEED TO KNOW THE BASICS OF THE 
 4. **Cache**: Stores frequently accessed data and instructions to reduce memory access latency.
 5. **Main Memory**: System RAM used for storing data and instructions.
 
+The CPU (Central Processing Unit) is the primary component of a computer system that carries out instructions and processes data. It is often referred to as the "brain" of the computer as it performs arithmetic, logic, control, and input/output operations. The CPU is generally made up of three main components:
+
+#### Arithmetic and Logic Unit (ALU)
+
+- **Function**: Performs arithmetic and logic operations such as addition, subtraction, and comparison of numbers.
+- **Role**: Responsible for performing mathematical and logical functions.
+
+#### Control Unit (CU)
+
+- **Function**: Coordinates the activities of the computer's hardware, including sending and receiving data and managing the timing and execution of instructions.
+- **Role**: Manages the various components of the computer, including the ALU, and interprets instructions from memory.
+
+#### Registers
+
+- **Function**: Temporary, high-speed storage locations within the CPU that hold data and instructions while they are being processed.
+- **Role**: Store data and instructions temporarily for quick access.
+
+### Key Components
+
+- **Data Bus**: Transfers data between components.
+- **Address Bus**: Transfers memory addresses between components.
+- **Control Bus**: Carries control signals to coordinate operations.
+
+### Graphical Representation
+
+Here is a graphical representation of the CPU components and their functions:
+
+```mermaid
+graph LR
+    A[ALU] -->|Performs arithmetic and logic operations|> B[Registers]
+    B -->|Stores data and instructions|> C[Control Unit]
+    C -->|Coordinates activities|> D[Data Bus]
+    D -->|Transfers data|> E[Address Bus]
+    E -->|Transfers memory addresses|> F[Control Bus]
+    F -->|Carries control signals|> G[CPU]
+```
+
 ### GPU Anatomy
 
 1. **Streaming Multiprocessors (SMs)**: The main processing units within the GPU, each containing multiple CUDA Cores.
@@ -38,6 +75,59 @@ IN-ORDER TO LEARN GOOD COMPUTING AND THE CUDA WE NEED TO KNOW THE BASICS OF THE 
 5. **L1 Cache**: On-chip memory shared between cores, managed within CUDA as “CUDA blocks”. The L1 cache is hardware-controlled and thus enables fast data transfer.
 6. **L2 Cache**: Memory shared between all CUDA blocks across multiple SMs. The cache stores both global and local memory.
 7. **Global Memory**: Enables access to the device’s DRAM. This is the slowest element to access for a CUDA program.
+Here is a graphical representation of the components and architecture of GPUs:
+
+```mermaid
+graph TD
+A[GPU] --> B[CUDA Cores]
+B --> C[Streaming Multiprocessors (SMs)]
+C --> D[Registers]
+D --> E[Shared Memory]
+E --> F[Global Memory]
+F --> G[Texture Units]
+
+A[GPU] --> H[Memory Hierarchy]
+H --> I[Registers]
+I --> J[Shared Memory]
+J --> K[Global Memory]
+
+A[GPU] --> L[Parallel Processing]
+L --> M[Massive Parallelism]
+M --> N[Hundreds of Cores]
+N --> O[Thousands of Threads]
+
+A[GPU] --> P[Specialized Use Cases]
+P --> Q[Deep Learning]
+Q --> R[Big Data Analytics]
+R --> S[Genomic Sequencing]
+
+A[GPU] --> T[Advantages]
+T --> U[High Data Throughput]
+U --> V[Massive Parallelism]
+V --> W[Specialized Acceleration]
+
+A[GPU] --> X[Limitations]
+X --> Y[Sequential Processing]
+Y --> Z[Unstructured Tasks]
+```
+
+This diagram illustrates the key components and architecture of GPUs:
+
+1. **CUDA Cores**: The fundamental processing units within the GPU, responsible for executing instructions in parallel.
+
+2. **Streaming Multiprocessors (SMs)**: The main processing units within the GPU, each containing multiple CUDA Cores.
+
+3. **Memory Hierarchy**: The GPU has a hierarchical memory structure, including registers, shared memory, and global memory.
+
+4. **Parallel Processing**: GPUs use parallel processing to divide tasks into smaller subtasks that are distributed among a vast number of processor cores.
+
+5. **Massive Parallelism**: GPUs have hundreds of cores, allowing them to perform massively parallel calculations.
+
+6. **Specialized Use Cases**: GPUs are designed for specialized tasks like deep learning, big data analytics, and genomic sequencing.
+
+7. **Advantages**: GPUs offer high data throughput, massive parallelism, and specialized acceleration for certain tasks.
+
+8. **Limitations**: GPUs are less adept at tasks that require sequential processing or are not well structured.
 
 ### CUDA Execution Process
 
