@@ -69,7 +69,9 @@ CUDA has improved significantly over the years, with advancements in GPU archite
 2. **Memory Hierarchy**: Efficient memory management and access, allowing for faster data transfer and processing.
 3. **Optimized Kernels**: CUDA kernels are optimized for GPU architecture, resulting in significant performance improvements.
 
+IN CASE YOU WERE NOT ABLE TO GET THE ABOVE HERE IS THE STEP BY STEP PROCESS:
 
+```mermaid
 graph TD
 A[CPU Execution] --> B[Identify Parallelizable Parts]
 B --> C[Memory Allocation]
@@ -80,6 +82,50 @@ F --> G[Memory Access]
 G --> H[Result Storage]
 H --> I[Copy Results to CPU Memory]
 I --> J[CPU Synchronization]
+```
+
+1. **CPU Execution**: The CPU executes the main program and identifies the parts that can be parallelized using CUDA.
+
+2. **Identify Parallelizable Parts**: The CPU analyzes the program and determines which parts can be accelerated using the GPU's parallel processing capabilities.
+
+3. **Memory Allocation**: The CPU allocates memory on the GPU's global memory and copies the necessary data from the CPU's main memory.
+
+4. **Copy Data to GPU Memory**: The CPU transfers the required data from the CPU's main memory to the GPU's global memory.
+
+5. **CUDA Kernel Launch**: The CPU launches a CUDA kernel, which is a function that runs in parallel on the GPU's CUDA Cores.
+
+6. **CUDA Core Execution**: Each CUDA Core executes the same kernel function on different parts of the data, taking advantage of the GPU's massive parallelism.
+
+7. **Memory Access**: CUDA Cores access data from global memory, shared memory, and registers to perform computations.
+
+8. **Result Storage**: The results are stored back in global memory.
+
+9. **Copy Results to CPU Memory**: The CPU copies the output data from the GPU's global memory to the CPU's main memory.
+
+10. **CPU Synchronization**: The CPU waits for the GPU to finish processing before proceeding.
+
+Here's a step-by-step explanation of the CUDA execution process:
+
+1. The CPU executes the main program and identifies the parts that can be parallelized using CUDA.
+
+2. The CPU analyzes the program and determines which parts can be accelerated using the GPU's parallel processing capabilities.
+
+3. The CPU allocates memory on the GPU's global memory and copies the necessary data from the CPU's main memory.
+
+4. The CPU transfers the required data from the CPU's main memory to the GPU's global memory.
+
+5. The CPU launches a CUDA kernel, which is a function that runs in parallel on the GPU's CUDA Cores.
+
+6. Each CUDA Core executes the same kernel function on different parts of the data, taking advantage of the GPU's massive parallelism.
+
+7. CUDA Cores access data from global memory, shared memory, and registers to perform computations.
+
+8. The results are stored back in global memory.
+
+9. The CPU copies the output data from the GPU's global memory to the CPU's main memory.
+
+10. The CPU waits for the GPU to finish processing before proceeding.
+
 
 In healthcare, CUDA finds applications in various critical areas, leveraging its parallel computing power to accelerate computations and improve patient care. Some industrial applications of CUDA in healthcare include:
 
