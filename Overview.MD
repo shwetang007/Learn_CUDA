@@ -126,6 +126,55 @@ Here's a step-by-step explanation of the CUDA execution process:
 
 10. The CPU waits for the GPU to finish processing before proceeding.
 
+NOW THAT YOU UNDERSTAND WHAT A CPU AND GPU ARE, HERE IS A DETAILED COMPARISON BETWEEN THE TWO TO ENHANCE YOUR FAMILIARITY WITH THEIR DIFFERENCES:
+
+Here is a simplified diagram comparing the CPU and GPU, along with a brief explanation of CUDA's performance:
+
+### CPU vs. GPU Diagram
+
+```mermaid
+graph TD
+A[CPU] --> B[Single Task]
+B --> C[Sequential Processing]
+C --> D[Single Core]
+D --> E[Single Thread]
+E --> F[Single Instruction]
+F --> G[Single Cycle]
+
+A[GPU] --> H[Parallel Tasks]
+H --> I[Massive Parallelism]
+I --> J[Thousands of Cores]
+J --> K[Thousands of Threads]
+K --> L[Simultaneous Execution]
+L --> M[Fast Execution]
+```
+
+### CPU vs. GPU Explanation
+
+1. **CPU**: Designed for single-task processing, sequential processing, and single-core processing. It is optimized for single-threaded performance.
+
+2. **GPU**: Designed for parallel processing, massive parallelism, and thousands of cores. It is optimized for parallel processing and thousands of threads.
+
+### CUDA Performance
+
+CUDA is a software layer that gives direct access to the GPU's virtual instruction set and parallel computational elements for the execution of compute kernels. CUDA's performance is based on the following key features:
+
+1. **Parallel Processing**: CUDA enables massive parallelism by executing thousands of threads simultaneously.
+
+2. **GPU Architecture**: CUDA takes advantage of the GPU's architecture, which includes thousands of cores and a hierarchical memory structure.
+
+3. **Memory Hierarchy**: CUDA uses a hierarchical memory structure, including registers, shared memory, and global memory, to manage data access efficiently.
+
+4. **Optimized Kernels**: CUDA kernels are optimized for GPU architecture, resulting in significant performance improvements.
+
+5. **Memory Access**: CUDA Cores access data from global memory, shared memory, and registers to perform computations.
+
+6. **Result Storage**: The results are stored back in global memory.
+
+7. **Copy Results to CPU Memory**: The CPU copies the output data from the GPU's global memory to the CPU's main memory.
+
+8. **CPU Synchronization**: The CPU waits for the GPU to finish processing before proceeding.
+
 
 In healthcare, CUDA finds applications in various critical areas, leveraging its parallel computing power to accelerate computations and improve patient care. Some industrial applications of CUDA in healthcare include:
 
@@ -146,13 +195,6 @@ In healthcare, CUDA finds applications in various critical areas, leveraging its
 8. **Biomedical Signal Processing**: CUDA speeds up processing of physiological signals such as electrocardiograms (ECG), electroencephalograms (EEG), and blood pressure waveforms. It enables real-time analysis of vital signs, detection of abnormalities, and patient monitoring in intensive care units (ICUs) and emergency departments.
 
 Overall, CUDA plays a vital role in advancing medical research, improving diagnostic capabilities, optimizing treatment strategies, and enhancing patient care in healthcare settings.
-
-
-Sure, let's delve into a more detailed explanation of CUDA, starting from the very basics:
-
-**History and Purpose**:
-
-CUDA stands for Compute Unified Device Architecture. It was developed by NVIDIA in 2006 as a parallel computing platform and programming model to utilize the computational power of their Graphics Processing Units (GPUs) for general-purpose computing tasks beyond just graphics rendering. Initially, GPUs were designed to handle graphics-related computations like rendering images and videos. However, researchers and developers realized that the parallel architecture of GPUs could also be effectively used for other types of computations, such as scientific simulations, data analysis, and artificial intelligence.
 
 **Technical Aspects**:
 
