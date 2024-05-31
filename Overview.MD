@@ -69,6 +69,18 @@ CUDA has improved significantly over the years, with advancements in GPU archite
 2. **Memory Hierarchy**: Efficient memory management and access, allowing for faster data transfer and processing.
 3. **Optimized Kernels**: CUDA kernels are optimized for GPU architecture, resulting in significant performance improvements.
 
+
+graph TD
+A[CPU Execution] --> B[Identify Parallelizable Parts]
+B --> C[Memory Allocation]
+C --> D[Copy Data to GPU Memory]
+D --> E[CUDA Kernel Launch]
+E --> F[CUDA Core Execution]
+F --> G[Memory Access]
+G --> H[Result Storage]
+H --> I[Copy Results to CPU Memory]
+I --> J[CPU Synchronization]
+
 In healthcare, CUDA finds applications in various critical areas, leveraging its parallel computing power to accelerate computations and improve patient care. Some industrial applications of CUDA in healthcare include:
 
 1. **Medical Imaging**: CUDA is used for accelerating image reconstruction, processing, and analysis in modalities like MRI, CT scans, PET scans, and ultrasound. It enables real-time visualization, 3D rendering, and feature extraction, aiding in diagnosis, treatment planning, and surgical guidance.
